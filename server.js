@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const sqlite3 = require("@appthreat/sqlite3");
 
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 const db = new sqlite3.Database(path.join(__dirname, "database.db"));
@@ -29,8 +28,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 function validEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+\$/.test(email);
+  //  Remove the backslash before the dollar sign
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
 
 app.post("/api/bookings", (req, res) => {
   const { service, barber, date, time, name, email, phone, notes = "" } = req.body;
