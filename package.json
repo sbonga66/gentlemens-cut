@@ -8,7 +8,10 @@
     "dev": "node server.js"
   },
   "dependencies": {
-    "express": "^5.1.0",
-    "sqlite3": "^6.0.1"
+    "@appthreat/sqlite3": "^9.1.0",
+    "express": "^5.1.0"
+  },
+  "allowScripts": {
+    "@appthreat/sqlite3@9.1.0": true
   }
 }
