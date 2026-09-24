@@ -1,0 +1,14 @@
+{
+  "name": "gentlemens-cut",
+  "version": "1.0.0",
+  "description": "Professional barber shop full-stack assessment website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^6.0.1"
+  }
+}

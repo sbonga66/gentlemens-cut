@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Gentlemen's Cut — premium barbering and men's grooming in Durban.">
+<title>Booking | The Gentlemen's Cut</title>
+<link rel="preconnect" href="https://images.pexels.com"><link rel="stylesheet" href="css/style.css">
+</head><body>
+<div class="topbar"><div class="container"><span>Mallinson Road, Sydenham · Durban</span><span>Walk-ins welcome when availability allows · Book online 24/7</span></div></div>
+<header class="header">
+  <nav class="nav container">
+    <a class="brand" href="index.html" aria-label="The Gentlemen's Cut home">
+      <span class="logo-mark">GC</span>
+      <span class="brand-text"><strong>THE GENTLEMEN'S CUT</strong><span>Barber Studio</span></span>
+    </a>
+    <button class="menu-btn" aria-label="Open navigation">☰</button>
+    <ul class="nav-links">
+      <li><a class="" href="index.html">Home</a></li>
+      <li><a class="" href="services.html">Services</a></li>
+      <li><a class="" href="about.html">About</a></li>
+      <li><a class="active" href="booking.html">Booking</a></li>
+      <li><a class="" href="contact.html">Contact</a></li>
+    </ul>
+    <a class="btn btn-gold" href="booking.html">Book Now</a>
+  </nav>
+</header>
+<main>
+<section class="page-hero"><div class="container"><div class="eyebrow">Online booking</div><h1>Reserve your chair.</h1><p>Choose your service, barber, date and time. After booking, add the appointment directly to Google Calendar or download an Apple Calendar-compatible event.</p></div></section>
+<section class="section"><div class="container form-wrap">
+  <div class="form-card">
+    <div class="kicker">Appointment details</div><h2 style="font-size:2.1rem">Book online.</h2>
+    <p id="offerNote" class="helper" style="margin:10px 0 24px">Secure your preferred time in under a minute.</p>
+    <form id="bookingForm">
+      <div class="form-grid">
+        <div class="field"><label for="service">Service *</label><select id="service" name="service" required><option value="">Select a service</option><option>Signature Cut</option><option>Skin Fade</option><option>Beard Sculpt</option><option>Cut + Beard</option><option>The Executive</option><option>Kids Cut</option></select></div>
+        <div class="field"><label for="barber">Barber *</label><select id="barber" name="barber" required><option value="">Choose your barber</option><option>Marcus Dlamini</option><option>Liam Naidoo</option><option>Thabo Maseko</option></select></div>
+        <div class="field"><label for="date">Date *</label><input id="date" name="date" type="date" required></div>
+        <div class="field"><label for="time">Time *</label><select id="time" name="time" required><option value="">Select a time</option></select></div>
+        <div class="field"><label for="name">Full name *</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required></div>
+        <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. 082 123 4567" required></div>
+        <div class="field full"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+        <div class="field full"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" placeholder="Optional: preferred style, beard notes, accessibility request..."></textarea></div>
+      </div>
+      <button class="btn btn-gold" style="width:100%;margin-top:20px" type="submit">Confirm appointment</button>
+      <div id="bookingAlert" class="alert"></div>
+    </form>
+    <div id="confirmation" class="confirmation"><h3>Appointment confirmed.</h3><p id="confirmationText" style="color:var(--muted);margin-top:7px"></p><div class="confirmation-actions"><button id="googleCalendar" class="btn btn-gold" type="button">Add to Google Calendar</button><button id="appleCalendar" class="btn btn-outline" type="button">Add to Apple Calendar</button></div><p class="helper" style="margin-top:12px">Apple Calendar uses a standard .ics event file supported by Apple Calendar and other calendar apps.</p></div>
+  </div>
+  <aside class="booking-side">
+    <div class="card"><img src="https://images.pexels.com/photos/7447136/pexels-photo-7447136.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Barber grooming client"><div class="summary"><div><span>Service</span><strong id="sumService">—</strong></div><div><span>Barber</span><strong id="sumBarber">—</strong></div><div><span>Date</span><strong id="sumDate">—</strong></div><div><span>Time</span><strong id="sumTime">—</strong></div><div><span>Price</span><strong id="sumPrice">—</strong></div></div></div>
+    <div class="card" style="margin-top:16px"><div class="kicker">Studio hours</div><p style="color:var(--muted);font-size:.9rem">Mon–Fri 09:00–18:00<br>Saturday 08:00–16:00<br>Sunday 09:00–14:00</p><a class="btn btn-outline" style="width:100%;margin-top:18px" href="contact.html">Need help?</a></div>
+  </aside>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <span class="logo-mark">GC</span>
+        <span class="brand-text"><strong>THE GENTLEMEN'S CUT</strong><span>Barber Studio</span></span>
+      </a>
+      <p style="margin-top:18px">Modern barbering, classic standards. Precision cuts, considered grooming and an experience worth returning to.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services & Prices</a></li><li><a href="about.html">Our Barbers</a></li><li><a href="booking.html">Book Appointment</a></li></ul>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <ul><li>47 Mallinson Road</li><li>Sydenham, Durban</li><li>KwaZulu-Natal, 4091</li><li><a href="tel:+27673146589">067 314 6589</a></li><li><a href="mailto:hello@gentlemenscut.co.za">hello@gentlemenscut.co.za</a></li></ul>
+    </div>
+    <div>
+      <h3>Hours & Social</h3>
+      <ul><li>Mon–Fri: 09:00–18:00</li><li>Saturday: 08:00–16:00</li><li>Sunday: 09:00–14:00</li><li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 The Gentlemen's Cut. All rights reserved.</span><span><a href="terms.html">Terms & Conditions</a> · <a href="contact.html">Contact</a></span></div>
+</footer>
+<div id="toast" class="toast"></div>
+<script src="js/app.js"></script>
+</body></html>
