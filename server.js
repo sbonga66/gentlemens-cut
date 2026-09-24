@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
-const sqlite3 = require("@appthreat/sqlite3").verbose();
+const sqlite3 = require("@appthreat/sqlite3");
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
